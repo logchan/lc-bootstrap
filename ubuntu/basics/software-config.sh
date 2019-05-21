@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp ../software/vim/.vimrc ~/.vimrc
+git config --global user.name logchan
+git config --global user.email logchan@outlook.com
 
-mkdir -p ~/.config/Code/User
-cp ../software/vscode/settings.json ~/.config/Code/User/settings.json
+cp ../software/vim/.vimrc ~/.vimrc
