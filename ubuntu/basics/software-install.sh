@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo apt update && \
-     apt install -y build-essential \
+sudo apt update
+sudo apt install -y build-essential \
                     ca-certificates \
                     cmake \
                     curl \
@@ -9,4 +9,5 @@ sudo apt update && \
                     net-tools \
                     ssh \
                     vim \
+                    unzip \
                     p7zip-full
