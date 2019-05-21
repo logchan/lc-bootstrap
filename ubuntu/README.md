@@ -7,17 +7,23 @@
 
 ## Configuration
 
-VMware:
+VMware: execute following, then reboot
 
 ```
-sudo apt update && apt install open-vm-tools
+sudo apt update && apt install open-vm-tools open-vm-tools-desktop
 ```
 
-In terminal:
+Copy and paste:
 
 ```
 sudo apt update && apt install git
 git clone https://github.com/logchan/lc-bootstrap
 cd lc-bootstrap/ubuntu
-./ubuntu.sh
+./basics.sh
+```
+
+If in GUI, one more line:
+
+```
+./gui.sh
 ```
