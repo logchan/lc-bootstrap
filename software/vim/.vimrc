@@ -32,6 +32,11 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
+try
+    colorscheme desert
+catch
+endtry
+
 set background=dark
 if has("gui_running")
     set guioptions-=T
@@ -109,3 +114,10 @@ endtry
 
 set laststatus=2
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+
+function! HasPaste()
+    if &paste
+        return 'PASTE MODE  '
+    endif
+    return ''
+endfunction
