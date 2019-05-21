@@ -1,0 +1,20 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Default Light+",
+    "git.enabled": false,
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Sarasa Mono J",
+    "editor.wordWrap": "on",
+    "window.restoreWindows": "none",
+ 
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+
+    "files.associations": {
+        "*.md.html": "markdown"
+    },
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "extensions.ignoreRecommendations": false,
+    "breadcrumbs.enabled": false,
+    "workbench.statusBar.feedback.visible": false
+}
