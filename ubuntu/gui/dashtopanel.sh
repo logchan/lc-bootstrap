@@ -20,8 +20,8 @@ mv dashtopanel/ ~/.local/share/gnome-shell/extensions/$ID
 gnome-shell --replace &
 disown
 
-dconf write /org/gnome/shell/enabled-extensions ['dash-to-panel@jderose9.github.com']
-dconf write /org/gnome/shell/extensions/dash-to-panel/location-clock 'STATUSRIGHT'
+dconf write /org/gnome/shell/enabled-extensions "['dash-to-panel@jderose9.github.com']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/location-clock "'STATUSRIGHT'"
 dconf write /org/gnome/shell/extensions/dash-to-panel/show-window-previews false
 dconf write /org/gnome/shell/extensions/dash-to-panel/group-apps false
 dconf write /org/gnome/shell/extensions/dash-to-panel/panel-size 32

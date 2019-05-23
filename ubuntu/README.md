@@ -10,13 +10,15 @@
 VMware: execute following, then reboot
 
 ```
-sudo apt update && apt install open-vm-tools open-vm-tools-desktop
+sudo apt update
+sudo apt install open-vm-tools open-vm-tools-desktop
 ```
 
 Copy and paste:
 
 ```
-sudo apt update && apt install git
+sudo apt update 
+sudo apt install git
 git clone https://github.com/logchan/lc-bootstrap.git
 cd lc-bootstrap/ubuntu
 ./basics.sh
