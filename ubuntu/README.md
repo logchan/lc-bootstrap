@@ -17,7 +17,7 @@ Copy and paste:
 
 ```
 sudo apt update && apt install git
-git clone https://github.com/logchan/lc-bootstrap
+git clone https://github.com/logchan/lc-bootstrap.git
 cd lc-bootstrap/ubuntu
 ./basics.sh
 ```

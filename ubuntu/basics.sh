@@ -1,4 +1,4 @@
 #!/bin/bash
 
-basics/software-install.sh
-basics/software-config.sh
+basics/essentials.sh
+basics/config.sh
