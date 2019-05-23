@@ -1,3 +1,3 @@
 #!/bin/bash
 
-dconf write /org/gnome/desktop/session/idle-delay uint32 0
+dconf write /org/gnome/desktop/session/idle-delay "uint32 0"
