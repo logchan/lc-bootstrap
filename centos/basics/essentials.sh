@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo dnf install -y \
+sudo yum install -y \
                     make \
                     automake \
                     gcc \

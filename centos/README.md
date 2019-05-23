@@ -1,4 +1,4 @@
-# Fedora bootstrap
+# CentOS bootstrap
 
 ## Installation
 
@@ -9,9 +9,9 @@
 Run:
 
 ```
-sudo dnf install git
+sudo yum install git
 git clone https://github.com/logchan/lc-bootstrap.git
-cd lc-bootstrap
+cd lc-bootstrap/centos
 ```
 
 Then,
