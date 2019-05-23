@@ -1,13 +1,15 @@
 #!/bin/bash
 
 sudo dnf install -y \
-                    build-essential \
-                    ca-certificates \
+                    make \
+                    automake \
+                    gcc \
+                    gcc-c++ \
+                    kernel-devel \
                     cmake \
-                    curl \
                     iotop \
                     net-tools \
-                    ssh \
                     vim \
                     unzip \
-                    p7zip-full
+                    p7zip \
+                    p7zip-plugins
