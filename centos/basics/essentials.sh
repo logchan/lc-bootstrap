@@ -1,5 +1,6 @@
 #!/bin/bash
 
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 sudo yum install -y \
                     make \
                     automake \
@@ -11,5 +12,4 @@ sudo yum install -y \
                     net-tools \
                     vim \
                     unzip \
-                    p7zip \
-                    p7zip-plugins
+                    python36-pip
