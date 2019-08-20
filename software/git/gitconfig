@@ -1,0 +1,9 @@
+[user]
+        name = logchan
+        email = logchan@outlook.com
+[push]
+        default = matching
+[color]
+        ui = auto
+        branch = auto
+        status = auto
