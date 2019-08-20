@@ -6,7 +6,7 @@
     "editor.fontFamily": "Sarasa Mono J",
     "editor.wordWrap": "on",
     "window.restoreWindows": "none",
-    "files.eol": "\n",
+ 
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
 
@@ -16,5 +16,17 @@
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
     "extensions.ignoreRecommendations": false,
     "breadcrumbs.enabled": false,
-    "workbench.statusBar.feedback.visible": false
+
+    "files.eol": "\n",
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.ipynb_checkpoints": true,
+        "**/.vs": true,
+        "**/.vscode": true
+    },
+
+    "python.linting.pylintArgs": [
+        "--errors-only",
+        "--generated-members=numpy.* ,torch.* ,cv2.* , cv.*"
+    ]
 }

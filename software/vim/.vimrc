@@ -121,3 +121,6 @@ function! HasPaste()
     endif
     return ''
 endfunction
+
+autocmd FileType make set noexpandtab
+autocmd FileType yaml set shiftwidth=2 tabstop=2

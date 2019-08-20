@@ -1,9 +1,6 @@
 #!/bin/bash
 
-git config --global user.name logchan
-git config --global user.email logchan@outlook.com
-git config --global push.default matching
-
+cp ../software/git/gitconfig ~/.gitconfig
 cp ../software/vim/.vimrc ~/.vimrc
 
 cat >> ~/.bashrc <<EOF
@@ -12,4 +9,3 @@ alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 EOF
-

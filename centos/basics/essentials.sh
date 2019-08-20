@@ -12,4 +12,5 @@ sudo yum install -y \
                     net-tools \
                     vim \
                     unzip \
-                    python36-pip
+                    python36-pip \
+                    bash-completion
