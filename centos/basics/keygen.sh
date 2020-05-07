@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ssh-keygen -b 4096
+ssh-keygen -t ed25519

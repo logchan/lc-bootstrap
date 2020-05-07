@@ -13,11 +13,9 @@
     "files.associations": {
         "*.md.html": "markdown"
     },
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
     "extensions.ignoreRecommendations": false,
     "breadcrumbs.enabled": false,
 
-    "files.eol": "\n",
     "files.exclude": {
         "**/__pycache__": true,
         "**/.ipynb_checkpoints": true,
@@ -25,8 +23,24 @@
         "**/.vscode": true
     },
 
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[typescript]": {
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.tabSize": 2
+    },
+
     "python.linting.pylintArgs": [
         "--errors-only",
-        "--generated-members=numpy.* ,torch.* ,cv2.* , cv.*"
-    ]
+        "--generated-members=numpy.* ,torch.* ,cv2.* , cv.*",
+        "--ignored-classes=torch.tensor"
+    ],
+
+    "diffEditor.renderSideBySide": false,
+    "git.ignoreLegacyWarning": true,
+    "cmake.configureOnOpen": false,
+    "powershell.integratedConsole.showOnStartup": false
 }
