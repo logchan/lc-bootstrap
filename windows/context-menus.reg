@@ -1,0 +1,87 @@
+Windows Registry Editor Version 5.00
+
+; Add "Open command window here"
+
+[HKEY_CLASSES_ROOT\Directory\shell\cmd2]
+@="Open command window here"
+"Extended"=""
+"Icon"="imageres.dll,-5323"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\cmd2\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd2]
+@="Open command window here"
+"Extended"=""
+"Icon"="imageres.dll,-5323"
+"NoWorkingDirectory"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd2\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+; Add "Open admin command window here"
+
+[HKEY_CLASSES_ROOT\Directory\shell\cmd2admin]
+@="Open admin command window here"
+"Extended"=""
+"Icon"="imageres.dll,-5324"
+
+[HKEY_CLASSES_ROOT\Directory\shell\cmd2admin\command]
+@="PowerShell -WindowStyle Hidden -Command \"Start-Process cmd -ArgumentList '/s,/k,pushd,%V' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd2admin]
+@="Open admin command window here"
+"Extended"=""
+"Icon"="imageres.dll,-5324"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd2admin\command]
+@="PowerShell -WindowStyle Hidden -Command \"Start-Process cmd -ArgumentList '/s,/k,pushd,%V' -Verb RunAs\""
+
+; Add "Open Powershell Here"
+
+[HKEY_CLASSES_ROOT\Directory\shell\powershell2]
+@="Open Powershell here"
+"Extended"=""
+"Icon"="imageres.dll,-5372"
+
+[HKEY_CLASSES_ROOT\Directory\shell\powershell2\command]
+@="PowerShell -NoExit -Command Set-Location -LiteralPath '%L'"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\powershell2]
+@="Open Powershell here"
+"Extended"=""
+"Icon"="imageres.dll,-5372"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\powershell2\command]
+@="PowerShell -NoExit"
+
+; Add "Open admin Powershell Here"
+
+[HKEY_CLASSES_ROOT\Directory\shell\powershell2admin]
+@="Open admin Powershell here"
+"Extended"=""
+"Icon"="imageres.dll,-5373"
+
+[HKEY_CLASSES_ROOT\Directory\shell\powershell2admin\command]
+@="PowerShell -WindowStyle Hidden -Command \"Start-Process cmd -ArgumentList '/s,/k,pushd,%V && start PowerShell && exit' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\powershell2admin]
+@="Open admin Powershell here"
+"Extended"=""
+"Icon"="imageres.dll,-5373"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\powershell2admin\command]
+@="PowerShell -WindowStyle Hidden -Command \"Start-Process cmd -ArgumentList '/s,/k,pushd,%V && start PowerShell && exit' -Verb RunAs\""
+
+; Add "Copy full name"
+
+[HKEY_CLASSES_ROOT\*\shell\Copy full name]
+
+[HKEY_CLASSES_ROOT\*\shell\Copy full name\command]
+@="cmd /c echo | set /p=\"%1\"| clip"
+
+[HKEY_CLASSES_ROOT\Directory\shell\Copy full name]
+
+[HKEY_CLASSES_ROOT\Directory\shell\Copy full name\command]
+@="cmd /c echo | set /p=\"%1\"| clip"
